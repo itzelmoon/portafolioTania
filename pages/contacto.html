@@ -9,7 +9,7 @@
     <!--Hoja de estilos botón-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Mi hoja de estilos-->
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Tania Valdez - Contacto</title>
 </head>
 <body id="gradienteRosa">
@@ -28,6 +28,7 @@
                     Aptitudes
                   </a>
                   <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./aptitudes.html">Principal</a>
                     <a class="dropdown-item" href="./aptitudes.html#sec1">Diseño Web</a>
                     <a class="dropdown-item" href="./aptitudes.html#sec2">Marketing Digital</a>
                     <a class="dropdown-item" href="./aptitudes.html#sec3">Desarrollo Web</a>
@@ -41,6 +42,7 @@
                     Portafolio
                   </a>
                   <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./portafolio.html">Principal</a>
                     <a class="dropdown-item" href="./portafolio.html#sec1">Diseño Web</a>
                     <a class="dropdown-item" href="./portafolio.html#sec2">Marketing Digital</a>
                     <a class="dropdown-item" href="./portafolio.html#sec3">Desarrollo Web</a>
@@ -59,13 +61,77 @@
     </header>
 
     <main>
-      <div class="container">
-        <h1 class="titulos">Contacto</h1>
+      <div id="sec" class="container">
+        <div class="cont-izq">
+          <h1 class="titulos">Contacto</h1>
+        </div>
         <div class="cont-der">
         <p class="textos" id="texto-largo">Aquí irá un bonito form</p>
-            <a type="button" href="./portafolio.html" class="btn btn-outline-primary">Mira mi portafolio</a>
+            <a type="button" href="./contacto.html#sec1" class="btn btn-outline-primary">O cotiza tu idea</a>
         </div>
         </div>
+
+        <div class="separacion"> 
+          </div>
+        
+        <div id=sec1 class="container2">
+          <div class="cont-izq">
+            <h1 class="titulos">Trabaja Conmigo</h1>
+            <h5 class="textoPequeño">Cotiza tu idea</h5>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="correo">Tu email</label>
+              <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="Nombre">Nombre</label>
+              <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+            </div>
+
+            <label for="exampleFormControlInput1">Asunto</label>
+            <input class="form-control" id="asunto" type="text" placeholder="Cotización">
+            <div class="form-group">
+
+              <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputHours">Horas</label>
+                    <input type="text" class="form-control" id="inputHours" placeholder="# Hours">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputRate">Tarifa por Hora</label>
+                    <input type="text" class="form-control" id="inputRate" placeholder="$">
+                </div>
+            </div>
+
+              <label for="campoMensaje">Cuéntame más </label>
+              <textarea class="form-control" id="campoMensaje" rows="3"></textarea>
+              
+            </div>
+
+          <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkIVA">
+                <label class="form-check-label" for="checkIVA">
+                    I.V.A.
+                </label>
+            </div>
+        </div>
+        <button type="button" id="btnEnviar" href="" class="btn btn-outline-primary btnEnviar">Cotiza tu idea</button>
+        
+        <div class="card-body">
+          <h5 class="card-title" id="cardTitle"></h5>
+          <p class="card-text" id="cardText"></p>
+          <p class="card-text" style="text-align:right;" id="cardCost">$</p>
+          <a href="#" class="btn btn-primary d-print-none" id="btnPrint">Print</a>
+      </div>
+        
+
+          </form>
+          </div>
+          </div>
+
     </main>
 
     <footer class="footer">
@@ -89,6 +155,7 @@
     </footer>
 
 
+    <script src="../js/main.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

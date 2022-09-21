@@ -1,0 +1,237 @@
+/*Importando fuentes desde google*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Space+Mono&family=VT323&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+/*Gradiante de Fondo */
+#gradienteMorado {
+  background: rgb(179,122,251);
+  background: linear-gradient(111deg, rgba(179,122,251,1) 2%, rgba(89,13,166,1) 15%, rgba(1,1,4,1) 40%, rgba(7,2,43,1) 61%, rgba(16,81,134,1) 86%, rgba(89,164,191,1) 98%);
+  background-attachment: fixed;
+  font-family: monospace;
+}
+
+#gradienteRosa{
+  background: rgb(199,127,175);
+background: linear-gradient(90deg, rgba(199,127,175,1) 15%, rgba(182,129,178,1) 68%, rgba(167,131,181,1) 100%);
+}
+
+/* Barra de búsqueda de bootstrap*/
+form.form-inline.my-2.my-lg-0 {
+  margin-inline-start: auto;
+  display: inline-flex;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  padding: 1em;
+  background-color: unset !important;
+}
+/*Boton de búsqueda ícono*/
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+button {
+  position: absolute;
+  border: none;
+  background: none;
+  padding: 0.3em;
+  padding-left: 13em;
+}
+/*barra de búsqueda*/
+input.form-control.mr-sm-2 {
+  border-radius: 0.7em;
+}
+/*fondo de la barra de búsqueda*/
+input.form-control.mr-sm-2 {
+  background-color: #e9ecefcf;
+  border: 1px solid #adb5bd;
+}
+
+/*links del nav*/
+.navbar-light .navbar-nav .nav-link {
+  color:  #F2CDF1;
+  margin: 0.7em;
+}
+.navbar-light .navbar-nav .active .nav-link{
+  color: #F2CDF1;
+
+}
+/*link visitado*/
+.navbar-light .navbar-nav .show>.nav-link {
+  color:  crimson;
+}
+/*hover link*/
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: cornflowerblue
+}
+
+/*Opción desplegable*/
+button.btn.btn-danger.dropdown-toggle.dropdown-toggle-split {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  margin-left: -1.2em;
+  color: #F2CDF1;
+}
+
+/*hover opción desplegable*/
+button.btn.btn-danger.dropdown-toggle.dropdown-toggle-split:hover {
+  color: cornflowerblue;
+  box-shadow: none;
+}
+
+btn-danger {
+  color: #F2CDF1;
+  background-color: none;
+  border-color: none;
+}
+
+
+
+
+/*Menú desplegable*/
+.navbar-light .navbar-toggler {
+  color: #F2CDF1;
+  border-color: #F2CDF1;
+  position: initial;
+}
+
+/*Grids*/
+.container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 0fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  padding-top: 18vh;
+  padding-bottom: 18vh;
+  grid-template-areas:
+    ". . .";
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 0fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  padding-top: 18vh;
+  padding-bottom: 18vh;
+  grid-template-areas: ". . .";
+}
+
+/*Grid Portafolio*/
+.containerPortafolio {
+  display: grid; 
+  grid-template-columns: 2fr 2fr 2fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."; 
+  justify-items: center;
+}
+
+/*Títulos*/
+h1 {
+  padding: 1em;
+  font-family: 'Space Mono', monospace;
+  font-weight: 200;color: #F2CDF1;
+      text-align: center;
+}
+
+/*El main*/
+.titulos{
+  font-size: xxx-large;
+}
+.textos{
+    font-size: larger;
+    color: #F2CDF1;
+    margin: 1em;
+    align-self: center;
+    text-align: center;
+}
+
+#texto-largo{
+  text-align: justify;
+
+}
+
+.cont-der {
+  align-self: center;
+  text-align: center;
+}
+
+Se
+
+
+/*El footer*/
+footer.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #140720;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+
+/*Íconos del footer*/
+footer img{
+  height: 1.5em;
+}
+
+
+
+/*Dispositivos pequeños (teléfonos horizontales, 576 px y más)*/
+@media (max-width: 576px) {
+  .container {
+    display: inline-block;
+  }
+}
+
+
+/*Dispositivos grandes (escritorios, 992px y más)*/
+@media (max-width: 992px) {
+  button {
+    position: unset;
+    padding: 3em;
+  }
+
+/*Boton de búsqueda ícono*/
+button {
+  position: absolute;
+  border: none;
+  background: none;
+  padding: 0.3em;
+  padding-left: 12em;
+}
+/*Contenedor principal*/
+.container {
+  /* padding-top: 0vh; */
+  /* padding-bottom: 0vh; */
+}
+/*Contenedor portafolio*/
+.containerPortafolio {
+  display: inline-block;
+  white-space: pre-wrap;
+  text-align: -webkit-center;
+}
+/*main*/
+main {
+  text-align-last: center;
+
+}
+.footer {
+  position: unset;
+}
+}
