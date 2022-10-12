@@ -5,33 +5,21 @@
   padding: 0;
   }
 
-/*Gradiante de Fondo */
-
-body#gradienteMorado {
-  background: rgb(0,38,62);
-  background: radial-gradient(circle, rgba(0,38,62,1) 15%, rgba(28,88,80,1) 45%, rgba(77,3,77,1) 58%, rgba(0,0,0,1) 100%);
-  background-attachment: fixed;
+body{
+  min-height: 100vh;
 }
 
-/* body#gradienteMorado v2 {
-  background: rgb(99,4,99);
-  background: radial-gradient(circle, rgba(99,4,99,1) 15%, rgba(28,88,80,1) 45%, rgba(73,0,73,1) 58%, rgba(0,0,0,1) 100%);
-} */
-
-/* #gradienteMorado V1 {
+/*Gradiante de Fondo */
+#gradienteMorado {
   background: rgb(179,122,251);
   background: linear-gradient(111deg, rgba(179,122,251,1) 2%, rgba(89,13,166,1) 15%, rgba(1,1,4,1) 40%, rgba(7,2,43,1) 61%, rgba(16,81,134,1) 86%, rgba(89,164,191,1) 98%);
   background-attachment: fixed;
   font-family: monospace;
-} */
+}
 
 #gradienteRosa{
   background: rgb(199,127,175);
-background: radial-gradient(circle, rgba(199,127,175,1) 15%, rgba(181,181,181,1) 45%, rgba(233,47,233,1) 58%, rgba(134,109,120,1) 100%);
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+background: linear-gradient(90deg, rgba(199,127,175,1) 15%, rgba(182,129,178,1) 68%, rgba(167,131,181,1) 100%);
 }
 
 /* Barra de búsqueda de bootstrap*/
@@ -39,10 +27,26 @@ form.form-inline.my-2.my-lg-0 {
   margin-inline-start: auto;
   display: inline-flex;
 }
+
+/* NAVBAR*/
+
+.navbar{
+  padding: 1em;
+  background-color: #00000059 !important;
+  position: fixed;
+}
+
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   padding: 1em;
-  background-color: unset !important;
+  background-color: #00000059 !important;
 }
+
+/* Botón menú*/
+svg.btnMenu {
+  width: 1em;
+  height: 1em;
+}
+
 /*Boton de búsqueda ícono*/
 .topnav .search-container button {
   float: right;
@@ -85,7 +89,7 @@ input.form-control.mr-sm-2 {
 }
 /*link visitado*/
 .navbar-light .navbar-nav .show>.nav-link {
-  color:  crimson;
+  color: #d2afd6;
 }
 /*hover link*/
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
@@ -103,7 +107,7 @@ button.btn.btn-danger.dropdown-toggle.dropdown-toggle-split {
 
 /*hover opción desplegable*/
 button.btn.btn-danger.dropdown-toggle.dropdown-toggle-split:hover {
-  color: cornflowerblue;
+  color: #d2afd6;
   box-shadow: none;
 }
 
@@ -123,25 +127,15 @@ btn-danger {
   position: initial;
 }
 
-/*Grids*/
+/*Grid*/
 .container {
   display: grid;
   grid-template-columns: 2fr 2fr 0fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  padding-top: 18vh;
-  padding-bottom: 18vh;
   grid-template-areas: ". . .";
-}
-
-.container2 {
-  display: grid;
-  grid-template-columns: 2fr 2fr 0fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  padding-top: 18vh;
-  padding-bottom: 18vh;
-  grid-template-areas: ". . .";
+  align-items: center;
+  height: 100vh;
 }
 
 /*Grid Portafolio*/
@@ -164,6 +158,11 @@ h1 {
 }
 
 /*El main*/
+
+main {
+  height: 100vh;
+}
+
 .titulos{
   font-size: xxx-large;
 }
@@ -185,12 +184,23 @@ h1 {
   text-align: center;
 }
 
+.cont-izq {
+  align-self: center;
+  text-align: center;
+}
 
+/*Botón saber más*/
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+  background-color: revert;
+  border-radius: 0.8em;
+}
 
-.separacion{
-  height:200px;
-  background-image: url("../imagenes/wallpaper2.png")
+/*SECCIONES*/
 
+section {
+  height: 100vh;
 }
 
 
@@ -210,12 +220,52 @@ footer img{
   height: 1.5em;
 }
 
+/*Botón desplegable*/
+.btn-danger.focus, .btn-danger:focus {
+  color: unset;
+  background-color: unset;
+  border-color: unset;
+  box-shadow: unset;
+}
+
+.btn-danger {
+  color: unset;
+  background-color: unset;
+  border-color: unset;
+}
+
+.btn-danger:not(:disabled):not(.disabled).active:focus, .btn-danger:not(:disabled):not(.disabled):active:focus, .show > .btn-danger.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+#myProgress {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: #ddd;
+  z-index: -1;
+}
+
+#myBar {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background-color: #4CAF50;
+}
+
+#label {
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
 
 
 /*Dispositivos pequeños (teléfonos horizontales, 576 px y más)*/
 @media (max-width: 576px) {
   .container {
     display: inline-block;
+    padding-top: 4em;
+    padding-bottom: 4em;
   }
 }
 
@@ -237,8 +287,7 @@ button {
 }
 /*Contenedor principal*/
 .container {
-  /* padding-top: 0vh; */
-  /* padding-bottom: 0vh; */
+  min-inline-size: -webkit-fill-available;
 }
 /*Contenedor portafolio*/
 .containerPortafolio {
@@ -251,7 +300,5 @@ main {
   text-align-last: center;
 
 }
-.footer {
-  position: unset;
-}
+
 }

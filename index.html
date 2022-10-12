@@ -14,64 +14,65 @@
 </head>
 <body id="gradienteMorado">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <svg class="btnMenu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-<!-- 
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html#sec2">Sobre mí</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./index.html#sec3" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Aptitudes
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" onclick="move()" href="./index.html#sec3">Técnicas</a>
+                    <a class="dropdown-item" href="./portafolio.html#sec2">Blandas</a>
+                    <a class="dropdown-item" href="./portafolio.html#sec3">Certificados</a>
+                  </div>
+                  </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/">Contáctame</a>
+                </li>
+
                 <div class="btn-group">
-                  <a class="nav-link" href="./pages/aptitudes.html">Aptitudes</a>
+                  <a class="nav-link" href="./pages/portafolio.html">Portafolio</a>
                   <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
-                    <span class="sr-only">Aptitudes</span>
+                    <span class="sr-only">Portafolio</span>
                   </button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./pages/aptitudes.html#sec1">Diseño Web</a>
-                    <a class="dropdown-item" href="./pages/aptitudes.html#sec2">Marketing Digital</a>
-                    <a class="dropdown-item" href="/pages/aptitudes.html#sec3">Desarrollo Web</a>
+                    <a class="dropdown-item" href="./pages/portafolio.html">Blandas</a>
+                    <a class="dropdown-item" href="./pages/aptitudes.html#sec2">Técnicas</a>
+                    <a class="dropdown-item" href="/pages/aptitudes.html#sec3">Certificaciones</a>
                   </div>
-                </div> -->
-              <li class="nav-item dropdown">
+                </div>
+<!--                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="./pages/aptitudes.html" role="button" data-toggle="dropdown" aria-expanded="false">
                     Aptitudes
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./pages/aptitudes.html#sec1">Principal</a>
                     <a class="dropdown-item" href="./pages/aptitudes.html#sec1">Diseño Web</a>
                     <a class="dropdown-item" href="./pages/aptitudes.html#sec2">Marketing Digital</a>
                     <a class="dropdown-item" href="./pages/aptitudes.html#sec3">Desarrollo Web</a>
                   </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/sobremi.html">Sobre mí</a>
-                </li>
-                
-<!--                 <div class="btn-group">
-                  <a class="nav-link" href="./pages/aptitudes.html">Portafolio</a>
-                  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
-                    <span class="sr-only"></span>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./pages/portafolio.html#sec1">Diseño Web</a>
-                    <a class="dropdown-item" href="./pages/portafolio.html#sec2">Marketing Digital</a>
-                    <a class="dropdown-item" href="./pages/portafolio.html#sec3">Desarrollo Web</a>
-                  </div>
-                </div>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/">Contáctame</a>
                 </li> -->
+                
 
-              <li class="nav-item dropdown">
+              <!--  <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="./pages/portafolio.html" role="button" data-toggle="dropdown" aria-expanded="false">
                     Portafolio
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="./pages/portafolio.html">Principal</a>
                     <a class="dropdown-item" href="./pages/portafolio.html#sec1">Diseño Web</a>
                     <a class="dropdown-item" href="./pages/portafolio.html#sec2">Marketing Digital</a>
                     <a class="dropdown-item" href="./pages/portafolio.html#sec3">Desarrollo Web</a>
@@ -79,7 +80,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                   </li>
-                </li>
+                </li> -->
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -90,13 +91,54 @@
     </header>
 
     <main>
+      <section id="sec1">
       <div class="container">
+        <div class="cont-izq">
         <h1 class="titulos">Tania Itzel Valdez Munguia</h1>
+        </div>
         <div class="cont-der">
           <p class="textos">Desarrolladora Web | Fullstack</p>
-          <a type="button" href="./pages/sobremi.html" class="btn btn-outline-primary">Más sobre mí</a>
+          <a type="button" href="#sec2" class="btn btn-outline-primary">Más sobre mí</a>
         </div>
         </div>
+      </section>
+
+      <section id="sec2">
+        <div class="container">
+          <div class="cont-izq">
+          <h1 class="titulos">Sobre mi</h1>
+        </div>
+          <div class="cont-der">
+            <p class="textos">Me especializo en el diseño de soluciones de software repletas de innovación. Soy resistente, asertiva y perseverante. Encuentro que aprender es un proceso fascinante por lo que me mantengo en constante desarrollo de mis habilidades.</p>
+            <a type="button" href="#sec3" onclick="move()" class="btn btn-outline-primary">Mis aptitudes</a>
+          </div>
+          </div>
+        </section>
+
+
+      <section id="sec3">
+        <div class="container">
+          <div class="cont-izq">
+          <h1 class="titulos">Aptitudes</h1>
+        </div>
+          <div class="cont-der">
+            <body>
+
+<div id="myProgress">
+  <div id="myBar">
+    <div id="label">10%</div>
+  </div>
+</div>
+
+<br> 
+
+<script src="./js/main.js"></script>
+
+
+          </div>
+          </div>
+        </section>
+
     </main>
 
     <footer class="footer">
